@@ -95,67 +95,67 @@ nhanes_recode <- function(data) {
   
   
   data %>% 
-  mutate(Gender=factor(Gender,seq(1:2),c("Male" , "Female"))) %>%
-  mutate(Tot_Income_family=factor(Tot_Income_family,seq(1:15), income_scale)) %>%
-  mutate(Tot_Income_household=factor(Tot_Income_household,seq(1:15),income_scale)) %>%
-  mutate(Educational_Level_20plus=factor(Educational_Level_20plus,seq(1:5),c("Less than 9th grade" , "9-11th grade" , "High School Grad/GED or equivalent" , "Some College or AA degree" , "College Graduate or above"))) %>%
-  mutate(Marital_status=factor(Marital_status,seq(1:6),c("Married" , "Widowed" , "Divorced" , "Separated" , "Never married" , "Living with partner"))) %>%
-  mutate(EverSmoker=factor(EverSmoker,seq(1:2),c("Yes" , "No" ))) %>%
-  mutate(CurrentSmoker=factor(CurrentSmoker,seq(1:5),c("Every day" , "Some days" , "Not at all" , "Refused" , "Don't know"))) %>%
-  mutate(highBP=factor(highBP,seq(1:2),c("Yes" , "No"))) %>%
-  mutate(highChol=factor(highChol,seq(1:2),c("Yes" , "No"))) %>%
-  mutate(Alcohol=factor(Alcohol,seq(1:2),c("Yes" , "No"))) %>%
-  mutate(Diabetes=factor(Diabetes,seq(1:3),c("Yes" , "No" , "Borderline"))) %>%
-  mutate(pastHeartAtt=factor(pastHeartAtt,seq(1:2),c("Yes" , "No"))) %>%
-  mutate(pastStroke=factor(pastStroke,seq(1:2),c("Yes" , "No"))) %>%
-  mutate(pastHeartDis=factor(pastHeartDis,seq(1:2),c("Yes" , "No"))) %>%
-  mutate(pastHeartFailure=factor(pastHeartFailure,seq(1:2),c("Yes" , "No"))) %>%
-  mutate(pastAngina=factor(pastAngina,seq(1:2),c("Yes" , "No"))) %>%
-  mutate(pastCancer=factor(pastCancer,seq(1:2),c("Yes" , "No"))) %>%
-  mutate(Industry=factor(Industry,seq(1:44),c("Agriculture production",
-                                                    "Agricultural services, forestry, and fishing", 
-                                                    "Construction", 
-                                                    "Mfg.-Food and kindred products", 
-                                                    "Mfg.-Textile mill products",
-                                                    "Mfg.-Apparel and other finished textile products", 
-                                                    "Mfg.-Paper products, printing, publishing, and allied industries",
-                                                    "Mfg.-Chemicals, petroleum, and coal products",
-                                                    "Mfg.-Rubber, plastics, and leather products",
-                                                    "Mfg.-Lumber and wood products, including furniture",
-                                                    "Mfg.-Metal industries",
-                                                    "Mfg.-Machinery, except electrical",
-                                                    "Mfg.-Electrical machinery, equipment, and supplies",
-                                                    "Mfg.-Transportation equipment",
-                                                    "Mfg.-Miscellaneous and not specified manufacturing industries",
-                                                    "Trucking service",
-                                                    "Transportation, except trucking",
-                                                    "Communications",
-                                                    "Utilities",
-                                                    "Wholesale Trade, Durable goods",
-                                                    "Wholesale Trade, Non-durable and not specified goods",
-                                                    "Retail-Department stores",
-                                                    "Retail-Food stores",
-                                                    "Retail-Vehicle dealers, supply and service stores",
-                                                    "Retail-Apparel and accessory stores",
-                                                    "Retail-Eating and drinking places",
-                                                    "Other Retail trade",
-                                                    "Banking and other finance",
-                                                    "Insurance and real estate",
-                                                    "Business services",
-                                                    "Repair services",
-                                                    "Private households",
-                                                    "Lodging places",
-                                                    "Personal services, except private households and lodging",
-                                                    "Entertainment and recreation services",
-                                                    "Offices of health practitioners",
-                                                    "Hospitals",
-                                                    "Health services, n. e. c.",
-                                                    "Educational services",
-                                                    "Social services",
-                                                    "Other professional and related services",
-                                                    "Justice, public order, and safety",
-                                                    "Public administration, except justice, public order, safety",
-                                                    "Military & national security"))) %>%
+    mutate(Gender=factor(Gender,seq(1:2),c("Male" , "Female"))) %>%
+    mutate(Tot_Income_family=factor(Tot_Income_family,seq(1:15), income_scale)) %>%
+    mutate(Tot_Income_household=factor(Tot_Income_household,seq(1:15),income_scale)) %>%
+    mutate(Educational_Level_20plus=factor(Educational_Level_20plus,seq(1:5),c("Less than 9th grade" , "9-11th grade" , "High School Grad/GED or equivalent" , "Some College or AA degree" , "College Graduate or above"))) %>%
+    mutate(Marital_status=factor(Marital_status,seq(1:6),c("Married" , "Widowed" , "Divorced" , "Separated" , "Never married" , "Living with partner"))) %>%
+    mutate(EverSmoker=factor(EverSmoker,seq(1:2),c("Yes" , "No" ))) %>%
+    mutate(CurrentSmoker=factor(CurrentSmoker,seq(1:5),c("Every day" , "Some days" , "Not at all" , "Refused" , "Don't know"))) %>%
+    mutate(highBP=factor(highBP,seq(1:2),c("Yes" , "No"))) %>%
+    mutate(highChol=factor(highChol,seq(1:2),c("Yes" , "No"))) %>%
+    mutate(Alcohol=factor(Alcohol,seq(1:2),c("Yes" , "No"))) %>%
+    mutate(Diabetes=factor(Diabetes,seq(1:3),c("Yes" , "No" , "Borderline"))) %>%
+    mutate(pastHeartAtt=factor(pastHeartAtt,seq(1:2),c("Yes" , "No"))) %>%
+    mutate(pastStroke=factor(pastStroke,seq(1:2),c("Yes" , "No"))) %>%
+    mutate(pastHeartDis=factor(pastHeartDis,seq(1:2),c("Yes" , "No"))) %>%
+    mutate(pastHeartFailure=factor(pastHeartFailure,seq(1:2),c("Yes" , "No"))) %>%
+    mutate(pastAngina=factor(pastAngina,seq(1:2),c("Yes" , "No"))) %>%
+    mutate(pastCancer=factor(pastCancer,seq(1:2),c("Yes" , "No"))) %>%
+    mutate(Industry=factor(Industry,seq(1:44),c("Agriculture production",
+                                                "Agricultural services, forestry, and fishing", 
+                                                "Construction", 
+                                                "Mfg.-Food and kindred products", 
+                                                "Mfg.-Textile mill products",
+                                                "Mfg.-Apparel and other finished textile products", 
+                                                "Mfg.-Paper products, printing, publishing, and allied industries",
+                                                "Mfg.-Chemicals, petroleum, and coal products",
+                                                "Mfg.-Rubber, plastics, and leather products",
+                                                "Mfg.-Lumber and wood products, including furniture",
+                                                "Mfg.-Metal industries",
+                                                "Mfg.-Machinery, except electrical",
+                                                "Mfg.-Electrical machinery, equipment, and supplies",
+                                                "Mfg.-Transportation equipment",
+                                                "Mfg.-Miscellaneous and not specified manufacturing industries",
+                                                "Trucking service",
+                                                "Transportation, except trucking",
+                                                "Communications",
+                                                "Utilities",
+                                                "Wholesale Trade, Durable goods",
+                                                "Wholesale Trade, Non-durable and not specified goods",
+                                                "Retail-Department stores",
+                                                "Retail-Food stores",
+                                                "Retail-Vehicle dealers, supply and service stores",
+                                                "Retail-Apparel and accessory stores",
+                                                "Retail-Eating and drinking places",
+                                                "Other Retail trade",
+                                                "Banking and other finance",
+                                                "Insurance and real estate",
+                                                "Business services",
+                                                "Repair services",
+                                                "Private households",
+                                                "Lodging places",
+                                                "Personal services, except private households and lodging",
+                                                "Entertainment and recreation services",
+                                                "Offices of health practitioners",
+                                                "Hospitals",
+                                                "Health services, n. e. c.",
+                                                "Educational services",
+                                                "Social services",
+                                                "Other professional and related services",
+                                                "Justice, public order, and safety",
+                                                "Public administration, except justice, public order, safety",
+                                                "Military & national security"))) %>%
     mutate(Occupation=factor(Occupation,seq(1:41),c("Executive, administrators, and managers",
                                                     "Management related occupations",
                                                     "Engineers, architects and scientists",
@@ -197,15 +197,15 @@ nhanes_recode <- function(data) {
                                                     "Freight, stock, and material movers, hand",
                                                     "Other helpers, equipment cleaners, hand packagers and laborers",
                                                     "Military occupations"))) %>%
-   mutate(Health_insurance_coverage=factor(Health_insurance_coverage,seq(1:2),c("Yes" , "No"))) %>%
-   mutate(Cover_Private_insurance=factor(Cover_Private_insurance,seq(1:2),c("Yes" , "No"))) %>%
-   mutate(Cover_Medicare=factor(Cover_Medicare,seq(1:2),c("Yes" , "No"))) %>%
-   mutate(Cover_Medicaid_CHIP=factor(Cover_Medicaid_CHIP,seq(1:2),c("Yes" , "No"))) %>%
-   mutate(Cover_other_government_insurance=factor(Cover_other_government_insurance,seq(1:2),c("Yes" , "No"))) %>%
-   mutate(Cover_any_single_plan=factor(Cover_any_single_plan,seq(1:2),c("Yes" , "No"))) %>%
-   mutate(compare_activity_same_age=factor(compare_activity_same_age,seq(1:3),c("More active" , "Less active" , "As Active"))) %>%
-   mutate(difficulty_walk_quarter_mile=factor(difficulty_walk_quarter_mile,seq(1:4),c("No difficulty" , "Some difficulty" , "Much difficulty" , "Unable to do"))) %>% 
-   mutate(Cardiovascular_fitness_level=factor(Cardiovascular_fitness_level,seq(1:3),c("Low" , "Moderate" , "High")))
+    mutate(Health_insurance_coverage=factor(Health_insurance_coverage,seq(1:2),c("Yes" , "No"))) %>%
+    mutate(Cover_Private_insurance=factor(Cover_Private_insurance,seq(1:2),c("Yes" , "No"))) %>%
+    mutate(Cover_Medicare=factor(Cover_Medicare,seq(1:2),c("Yes" , "No"))) %>%
+    mutate(Cover_Medicaid_CHIP=factor(Cover_Medicaid_CHIP,seq(1:2),c("Yes" , "No"))) %>%
+    mutate(Cover_other_government_insurance=factor(Cover_other_government_insurance,seq(1:2),c("Yes" , "No"))) %>%
+    mutate(Cover_any_single_plan=factor(Cover_any_single_plan,seq(1:2),c("Yes" , "No"))) %>%
+    mutate(compare_activity_same_age=factor(compare_activity_same_age,seq(1:3),c("More active" , "Less active" , "As Active"))) %>%
+    mutate(difficulty_walk_quarter_mile=factor(difficulty_walk_quarter_mile,seq(1:4),c("No difficulty" , "Some difficulty" , "Much difficulty" , "Unable to do"))) %>% 
+    mutate(Cardiovascular_fitness_level=factor(Cardiovascular_fitness_level,seq(1:3),c("Low" , "Moderate" , "High")))
   # Todo: Why is this not here:
   #  mutate(general_health_condition=factor(general_health_condition,seq(1:5),c("Excellent" , "Very good" , "Good" , " Fair" , "Poor"))) %>%
   #  mutate(Sleep_hours=factor(Sleep_hours,seq(1:1),c(values from 1 to 11, and "12+"))) %>%
@@ -220,8 +220,9 @@ nhanes_get_group <- function(group) {
   # all tables that consist of group name followed by underscore wave (except wave A), 
   # Regex, ^=start, but $=end not accepted, replace by \b - word boundary
   # sort by waves to keep indiviuals sorted by SEQN
+  # ATTENTION: Will exclude pre-pandemic wave 2017-2020
   tables <- nhanesSearchTableNames(paste0("^",group,"(_[B-Z])?\\b")) %>% str_sort()
-
+  
   # iterate over the waves (tables in group)
   for(table in tables) {
     # file name to save
@@ -234,8 +235,8 @@ nhanes_get_group <- function(group) {
     if (tablewave %in% studies$wave) {
       # check if table exists already
       if(file.exists(filename)) 
-         #append if it does
-         data <- readRDS(filename)
+        #append if it does
+        data <- readRDS(filename)
       else {
         rawfilename <- paste0(filename,".download")
         
@@ -248,22 +249,22 @@ nhanes_get_group <- function(group) {
         
         # get table, change factor to string (later bind!), consistently rename variables accross waves
         data <- data %>% 
-            mutate(Wave = tablewave) %>% 
-            mutate_if(is.factor,as.character) %>% 
-            nhanes_rename() %>% 
-            clear.labels()
+          mutate(Wave = tablewave) %>% 
+          mutate_if(is.factor,as.character) %>% 
+          nhanes_rename() %>% 
+          clear.labels()
         
         # save processed table
         saveRDS(data,file = filename )
       } 
-    
+      
       #if(length(NHANES_group)==0)
       #  NHANES_group <- data
       #else {
-        # add new data (no labels in bind_rows)
-        NHANES_group <- bind_rows(NHANES_group, data)
-        # todo - copy over labels
-        #attributes(NHANES_group)<-attributes(data)
+      # add new data (no labels in bind_rows)
+      NHANES_group <- bind_rows(NHANES_group, data)
+      # todo - copy over labels
+      #attributes(NHANES_group)<-attributes(data)
       #}
     } 
   }
@@ -308,7 +309,7 @@ nhanes_get_vars <- function(vars)
     print(paste0("Processing variable ",var))
     
     filename <- paste0("./data/",var,".RDS")
-
+    
     # check if processed data with var exists
     if(file.exists(filename)) {
       print("File with saved data exists")
@@ -317,11 +318,13 @@ nhanes_get_vars <- function(vars)
     else {
       # create data frame for var
       NHANES_var <- data.frame()
-  
-      tables <- data.frame(name=nhanesSearchVarName(var)) %>% # get tables that contain var
-        mutate(wave=replace_na(str_extract(name,"(?<=_)[B-Z]"),"A")) %>%  # extract wave of table
-                      # letter after underscore ("XXX_W"), or "A" if no wave ("XXX")
-        filter(wave %in% studies$wave) # filter on relevant waves
+      
+      tables <- nhanesSearchVarName(var, namesonly = FALSE) %>% # get tables that contain var
+        filter(as.integer(Begin.Year) %in% studies$year) %>% # filter on relevant waves
+        mutate(name = Data.File.Name,
+               wave=replace_na(str_extract(name,"(?<=_)[B-Z]"),"A")) %>%  # extract wave of table
+        # letter after underscore ("XXX_W"), or "A" if no wave ("XXX")
+        select(name, wave)
       
       # iterate over the waves (tables in group)
       for(i in seq_along(tables$name)) {
@@ -333,7 +336,7 @@ nhanes_get_vars <- function(vars)
         
         # check if table exists already
         rawfilename <- paste0("./data/",table,".RDS.download")
-          
+        
         if(file.exists(rawfilename)){
           print("file with downloaded data exists")
           data <- readRDS(rawfilename) 
@@ -344,7 +347,7 @@ nhanes_get_vars <- function(vars)
           saveRDS(data, file=rawfilename)
         }
         print("processing raw data")
-        # get variable, change factor to string (later bind!), consistently rename variables accross waves
+        # get variable, change factor to string (later bind!), consistently rename variables across waves
         data <- data %>% 
           select(one_of(c("SEQN",var))) %>% 
           mutate(Wave = tablewave) %>% 
@@ -362,7 +365,7 @@ nhanes_get_vars <- function(vars)
         #}
         summary(NHANES_var)  
       } 
-     
+      
       # save processed table
       saveRDS(NHANES_var,file = filename )
       
@@ -386,16 +389,16 @@ nhanes_get_vars <- function(vars)
 # merge them by SEQN (unique in NHANES Cont)
 
 NHANES_Cont<-
-    Reduce(function(x,y){full_join(x,select(y,-Wave),by="SEQN")},nhanes_get_groups(nhanes_groups)) %>% 
-    left_join(select(nhanes_get_vars(nhanes_extra_vars),-Wave),by="SEQN") %>% 
-    nhanes_recode() %>% 
-    mutate(SBP=rowMeans(select(.,BPXSY1,BPXSY2,BPXSY3,BPXSY4),na.rm=TRUE),
-          DBP=rowMeans(select(.,BPXDI1,BPXDI2,BPXDI3,BPXDI4),na.rm=TRUE),
-          Smoker=factor(if_else(if_else(is.na(CurrentSmoker),EverSmoker=="Yes",CurrentSmoker %in% c("Every day","Some days")),"Yes","No"),levels=c("Yes","No")),
-          SampleWeightMEC=if_else(Wave<"C",WTMEC4YR*2,WTMEC2YR)/8, #https://wwwn.cdc.gov/nchs/nhanes/tutorials/module3.aspx
-          Study=4,
-          Cycle=Wave) %>% 
-    select(suppressWarnings(one_of(nhanes_vars)))
+  Reduce(function(x,y){full_join(x,select(y,-Wave),by="SEQN")},nhanes_get_groups(nhanes_groups)) %>% 
+  left_join(select(nhanes_get_vars(nhanes_extra_vars),-Wave),by="SEQN") %>% 
+  nhanes_recode() %>% 
+  mutate(SBP=rowMeans(select(.,BPXSY1,BPXSY2,BPXSY3,BPXSY4),na.rm=TRUE),
+         DBP=rowMeans(select(.,BPXDI1,BPXDI2,BPXDI3,BPXDI4),na.rm=TRUE),
+         Smoker=factor(if_else(if_else(is.na(CurrentSmoker),EverSmoker=="Yes",CurrentSmoker %in% c("Every day","Some days")),"Yes","No"),levels=c("Yes","No")),
+         SampleWeightMEC=if_else(Wave<"C",WTMEC4YR*2,WTMEC2YR)/8, #https://wwwn.cdc.gov/nchs/nhanes/tutorials/module3.aspx
+         Study=4,
+         Cycle=Wave) %>% 
+  select(suppressWarnings(one_of(nhanes_vars)))
 
 # duplicate SEQN
 print(paste("Duplicate SEQN in NHANES_Cont:", sum(duplicated(NHANES_Cont$SEQN))))

@@ -39,7 +39,7 @@ nhanes_groups<-list("DEMO","CVX","BMX","BPX","BPQ","ALQ","DIQ","MCQ","HIQ","SMQ"
 # shorter list for debug
 groups<-list("CVX")
 
-# list of additional variables, if spread accross different "groups"
+# list of additional variables, if spread across different "groups"
 nhanes_extra_vars<-list("LBXCOT")
 
 # list of variables

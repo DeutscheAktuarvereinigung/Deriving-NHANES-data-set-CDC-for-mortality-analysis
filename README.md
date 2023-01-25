@@ -1,12 +1,36 @@
-# Deriving of a NHANES-data set (CDC) for a mortality analysis
-
-Big Data Working Group (life) DAV, NHANES-data set
+Big Data Working Group (life) DAV, NHANES-data set, January 2023
 
 Deriving of a NHANES-data set (CDC) for a mortality analysis
 
-The Big Data Working Group (life) has developed R-scripts to build a consistent NHANES-data set which is suitable for mortality analysis. These scripts are published as a first part of the working group. A written report will be published soon to describe the work and give more details, especially of the variables. As a second part of the Working Group, additional analysis on this NHANES-data set will be published later.
-All scripts are placed in the directory NHANES_ORIGINAL. To build the NHANES-data set locally, start or run the script NHANES_full_run.R. There are few R-libraries which are necessary. If they are no present, they could be installed automatically or manually. After the full run (about 1 h to download all the original data from the CDC web server), the output file is placed in the subdirectory 'data' as NHANES_ALL.RData and NHANES_ALL.csv. The other files in 'data' are temporary files which are used if a second run is performed to avoid downloading all CDC-data again.
+Introduction
+-------------
+
+The Big Data Working Group (life) of the German Actuarial Association (DAV) has developed R-scripts to create a consistent NHANES-data set, suitable for a mortality analysis. These scripts, along with a written report detailing the work, have been published here as the first part of the working group's efforts.  
+
+https://aktuar.de/unsere-themen/fachgrundsaetze-oeffentlich/2022-09-21-DAV-Ergebnisbericht_Big_Data_Leben_NHANES_final.pdf
+
+Additional analysis on this NHANES-data set will be released in the future. An example of EDA-Analysis is placed in the directory EDA.
+
+Scripts
+-------
+
+All scripts are placed in the directory NHANES_ORIGINAL. To build the NHANES-data set locally, RUN the script NHANES_full_run.R. 
+
+A few R-libraries are required, and these can be installed automatically or manually. After the data set is built (about 1 h to download all the original data from the CDC web server), the output files can be found in the "data" subdirectory as NHANES_ALL.RData and NHANES_ALL.csv. The other files in 'data' are temporary files which are used if a second run is performed to avoid downloading all CDC-data again.
+
 Unfortunately, the CDC-mortality-data have changed at the beginning of may 2022. Additional years have been added, so more deaths are now available. Therefore, the examples and results of the written report are not fully reproduceable anymore.
+
+Contact
+-------
+
+You are invited to contact the Big-Data-Working-Group, if there are any questions or suggestions:
+
+sheyers@kpmg.com
+thomas.gehling@gehlingconsulting.de
+adoering@scor.de
+
+Disclaimer
+-------
 
 The German Association of Actuaries (Deutsche Aktuarvereinigung.V., DAV) is the professional representation of all actuaries in Germany. It was founded in 1993 and has more than 5,400 members today. More than 700 members are involved in thirteen committees and in over 60 working groups as a voluntary commitment.
 

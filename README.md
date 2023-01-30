@@ -14,7 +14,7 @@ Additional analysis on this NHANES-data set will be released in the future. An e
 Scripts
 -------
 
-All scripts are placed in the directory NHANES_ORIGINAL. To build the NHANES-data set locally, RUN the script NHANES_full_run.R. 
+All scripts are placed in the directory NHANES_ORIGINAL. **To build the NHANES-data set locally, run the script NHANES_full_run.R.**
 
 A few R-libraries are required, and these can be installed automatically or manually. After the data set is built (about 1 h to download all the original data from the CDC web server), the output files can be found in the "data" subdirectory as NHANES_ALL.RData and NHANES_ALL.csv. The other files in 'data' are temporary files which are used if a second run is performed to avoid downloading all CDC-data again.
 

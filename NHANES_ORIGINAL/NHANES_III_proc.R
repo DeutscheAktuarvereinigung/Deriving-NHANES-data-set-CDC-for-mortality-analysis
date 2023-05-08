@@ -139,7 +139,7 @@ nhanes_III_recode <- function(data){
                                                                   ,"$35000 to $44999"
                                                                   ,"$45000 to $49999"
                                                                   ,"Over $50000"))) %>%
-    mutate(general_health_condition=factor(general_health_condition,seq(1:5),c("Excellent" , "Very good" , "Good" , " Fair" , "Poor"))) %>%
+    mutate(general_health_condition=factor(general_health_condition,seq(1:5),c("Excellent" , "Very good" , "Good" , "Fair" , "Poor"))) %>%
     mutate(difficulty_walk_quarter_mile=factor(difficulty_walk_quarter_mile,seq(1:4),c("No difficulty" , "Some difficulty" , "Much difficulty" , "Unable to do"))) %>%
     mutate(compare_activity_same_age=factor(compare_activity_same_age,seq(1:3),c("More active" , "Less active" , "As Active")))
 }
